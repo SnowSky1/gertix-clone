@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--100-thin.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--200-extra-light.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--300-light.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--400-regular.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--500-medium.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--600-semi-bold.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--700-bold.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--100-thin-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--200-extra-light-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--300-light-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--400-regular-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--500-medium-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--600-semi-bold-italic.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono--700-bold-italic.ttf");
+}
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ITCAvantGardePro-Bk.otf");
+}

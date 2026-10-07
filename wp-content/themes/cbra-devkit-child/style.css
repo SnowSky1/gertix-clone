@@ -1,0 +1,86 @@
+/*
+ Theme Name:   CBRA-Child
+ Theme URI:    https://cbra.digital
+ Description:  CBRA Child Theme
+ Author:       CBRA Digital
+ Author URI:   https://cbra.digital
+ Template:     cbra-devkit
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  cb-child
+*/
+
+@layer parent-theme, child-theme;
+
+@layer child-theme {
+  :root {
+    --width-content: min(clamp(1040px, 80vw, 1420px), 100%);
+
+    --neutral-100: #f2f2f2;
+    --neutral-200: #e8ebeb;
+    --neutral-300: #9bacae;
+    --neutral-400: #71797a;
+    --neutral-500: #494f52;
+    --neutral-600: #17181a;
+
+    --chromata-400: #25b895;
+    --chromata-600: #136157;
+
+    --font-primary: "IBM Plex Mono", sans-serif;
+    --font-secondary: "ITC Avant Garde Gothic Pro", sans-serif;
+
+    --border-style: 1px dashed var(--neutral-300);
+    --border-radius: 2px;
+    --header-height: 3.125rem;
+
+    font-family: var(--font-primary);
+    font-size:  15px; /* 0.9735rem */
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: "ss04" on;
+  }
+
+  body {
+    line-height: 134%;
+  }
+
+  #page {
+    background-color: var(--neutral-100);
+  }
+
+
+  /* #content {
+    background-color: var(--neutral-100);
+  } */
+
+  .inner {
+    width: var(--width-content);
+    margin-inline: auto;
+  }
+
+  button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+  }
+
+  h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.24;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    scroll-margin-top: 100px;
+  }
+}
+

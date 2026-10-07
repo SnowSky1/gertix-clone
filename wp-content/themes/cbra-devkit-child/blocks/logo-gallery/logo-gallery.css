@@ -1,0 +1,73 @@
+@layer child-theme {
+  .cb-block--logo-gallery {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0;
+
+    max-width: 65rem;
+    margin-inline: auto;
+
+    .logo-gallery__header {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      gap: 3rem;
+      width: 100%;
+    }
+
+    .logo-gallery__heading {
+      font-family: var(--font-secondary);
+      font-size: 1.73rem;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 1.24;
+      letter-spacing: 0.54px;
+      text-transform: uppercase;
+      color: var(--neutral-600);
+      text-align: center;
+    }
+
+    .logo-gallery__separator {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      > hr {
+        flex: 1;
+        border: none;
+        border-top: var(--border-style);
+      }
+    }
+
+    .logo-gallery__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .logo-gallery__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 8rem;
+      height: 8rem;
+      padding: 1.5rem;
+      text-decoration: none;
+
+      & img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: contain;
+        filter: grayscale(100%);
+
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

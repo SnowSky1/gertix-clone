@@ -1,0 +1,159 @@
+/*
+Theme Name: CBRA DevKit
+Description: Das CBRA-Basis-Theme
+Author: CBRA Digital
+Author URI: https://cbra-media.com
+Version: 1.0.0
+Text Domain: cbra-devkit
+*/
+@layer parent-theme, child-theme;
+
+@layer parent-theme {
+  /* CSS RESET */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select,
+  address {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  /* SCROLLBAR */
+  body {
+    overflow: overlay;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #efefef;
+  }
+
+  /* LAYOUT */
+  :root {
+    --gutter-mobile: 1rem;
+    --width-content: min(1040px, 100%);
+  }
+
+  #content {
+    display: grid;
+    grid-template-columns: 1fr 1fr var(--width-content) 1fr 1fr;
+
+    > * {
+      grid-column: 3;
+    }
+
+    .cb-halfbleed--left {
+      grid-column: 2 / 4;
+
+      @media only screen and (max-width: 767px) {
+        grid-column: 3;
+      }
+    }
+
+    .cb-halfbleed--right {
+      grid-column: 3 / 5;
+
+      @media only screen and (max-width: 767px) {
+        grid-column: 3;
+      }
+    }
+
+    .cb-halfbleed--both {
+      grid-column: 2 / 5;
+
+      @media only screen and (max-width: 767px) {
+        grid-column: 3;
+      }
+    }
+
+    .cb-fullbleed--left {
+      grid-column: 1 / 4;
+
+      @media only screen and (max-width: 767px) {
+        grid-column: 3;
+      }
+    }
+
+    .cb-fullbleed--right {
+      grid-column: 3 / 6;
+
+      @media only screen and (max-width: 767px) {
+        grid-column: 3;
+      }
+    }
+
+    .cb-fullbleed--both {
+      grid-column: 1 / 6;
+
+      @media only screen and (max-width: 1024px) {
+        padding-inline: 0;
+      }
+    }
+  }
+
+  /* BASE BLOCK STYLES */
+  .cb-block {
+    margin-block-start: var(--margin-lg-top);
+    margin-block-end: var(--margin-lg-bottom);
+
+    @media only screen and (max-width: 1024px) {
+      padding-inline: var(--gutter-mobile);
+
+      margin-block-start: var(--margin-md-top);
+      margin-block-end: var(--margin-md-bottom);
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-block-start: var(--margin-sm-top);
+      margin-block-end: var(--margin-sm-bottom);
+    }
+  }
+}
